@@ -1,0 +1,153 @@
+* {
+  font-family: "Afacad Flux", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('96.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  /* background: transparent; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+.logo {
+  font-size: 1.5em;
+  color: coral;
+  user-select: none;
+}
+.navigation a {
+  position: relative;
+  color: coral;
+  font-size: 1.5em;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+.navigation a::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -2px;
+    background: rgb(211, 201, 211);
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .4s;
+}
+.navigation a:hover::after{
+    transform: scaleX(1);
+
+}
+.login {
+  height: 40px;
+  width: 100px;
+  background: transparent;
+  color:  coral;
+  font-weight: 500;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin-left: 40px;
+  border: solid 2px rgb(125, 221, 231);
+  outline: none;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.login:hover{
+    background: antiquewhite;
+    color: black;
+}
+
+.wrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    height: 500px;
+    width: 400px;
+    background: transparent;
+    border: 2px solid rgb(125, 221, 231);
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 30px rgba(1, 1, 0, 3);
+}
+.wrapper.login-form{
+    position: absolute;
+    width: 100%;
+    padding: 40px;
+
+}
+.login-form h2{
+    text-align: center;
+    font-size: 2em;
+    color:  coral;
+}
+.inputbox{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid  coral;
+    margin: 20px 0;
+}
+
+.inputbox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+
+ .inputbox .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1em;
+    color: #162938;
+    line-height: 50px;
+ }
+ .remember{
+    color:  coral;
+    justify-content: space-between;
+ }
+ .remember label input{
+accent-color: coral;
+margin-right: 3px;
+ }
+ .remember a{
+    color:  coral;
+    text-decoration: none;
+
+ }
+
+ .remember a:hover{
+    text-decoration: underline;
+ }
+ .btn{
+    background-color: #162938;
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+
+ }
